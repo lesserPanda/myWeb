@@ -8,75 +8,60 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>view-黑色时间轴个人博客模板</title>
+<title>view-lesserPanda个人博客</title>
 <meta name="keywords" content="黑色模板,个人网站模板,个人博客模板,博客模板,css3,html5,网站模板" />
 <meta name="description" content="这是一个有关黑色时间轴的css3 html5 网站模板" />
-<link href="css/styles.css" rel="stylesheet">
-<link href="css/view.css" rel="stylesheet">
-<!-- 返回顶部调用 begin -->
-<link href="css/lrtk.css" rel="stylesheet" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<!-- 返回顶部调用 end-->
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
+<jsp:include page="/WEB-INF/fore/commons/head.jsp"/>
 </head>
 <body>
-<header>
-  <nav id="nav">
-    <ul>
-      <li><a href="/" >网站首页</a></li>
-      <li><a href="/download/" target="_blank" title="个人博客模板">个人博客模板</a></li>
-      <li><a href="/book/" target="_blank" title="图书推荐">图书推荐</a></li>
-      <li><a href="/web/" target="_blank" title="网站建设">网站建设</a></li>
-      <li><a href="/newshtml5/" target="_blank" title="HTML5 / CSS3">HTML5 / CSS3</a></li>
-      <li><a href="/jstt/" target="_blank" title="技术探讨">技术探讨</a></li>
-      <li><a href="/news/s/" target="_blank" title="慢生活">慢生活</a></li>
-      <li><a href="/newstalk/" target="_blank" title="碎言碎语">碎言碎语</a></li>
-      <li><a href="/news/jsex/" target="_blank" title="JS 实例代码演示">JS实例</a></li>
-    </ul>
-    <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题--> 
-  </nav>
-</header>
+<jsp:include page="/WEB-INF/fore/commons/show_message.jsp"/>
 <!--header end-->
 <div id="mainbody">
-  <div class="blogs">
-    <div id="index_view">
-      <h2 class="t_nav"><a href="/">网站首页</a><a href="/">慢生活</a></h2>
-      <h1 class="c_titile">现在，我相信爱情！</h1>
-      <p class="box">发布时间：2013-07-25<span>编辑：DanceSmile</span>阅读（30）</p>
-      <ul>
-        <p> 茫茫人海里遇见一个人有多难？有时候很难，几十亿人，一生也难见一次。有时却很容易，人群中第一眼就能把他认出来。我们总在不设防的时候喜欢上一些人。没什么原因，也许只是一个温和的笑容，一句关切的问候。可能未曾谋面，可能志趣并不相投，可能不在一个高度，却牢牢地放在心上了。冥冥中该来则来，无处可逃，就好像喜欢一首歌，往往就因为一个旋律或一句打动你的歌词。喜欢或者讨厌，是让人莫名其妙的事情。 </p>
-        <p><img src="images/post1.jpg"></p>
-        <p> 从前，我不相信爱情，现在我相信。世界上唯一比被爱更幸福的，就是去爱；唯一比被爱更幸运的，就是在茫茫人海中，找到值得爱的人。作家杜拉斯说“爱之于我，不是肌肤之亲，不是一蔬一饭，它是一种不死的欲望，是疲惫生活中的英雄梦想。” </p>
-        <p>可能我不懂得煽情，我学不会安慰别人，每次看到别人伤心，我总是生硬的问句怎么了，别想太多了。我学不会思念，即使很长时间没见，我也不会主动打电话发短信说句我好想你之类的话。每次想要为别人做什么的时候还总是态度强硬闹得不愉快，可这就是我的方式，如果爱我，请接受这样的我。 </p>
-        <p>若，能让你我一起走过，那么，我奢求是地老天荒的时候你仍然牵着我的手，然后慢慢的一起变老。在月下，我们一起听风切切的吟，听曲轻轻的扬。我想，生活中没有比这更醉人的浪漫。于是，我的世界里有了一个独特的你，你的世界里多了一个平凡的我。</p>
-        <p>我们都不是没有原则的人。但一辈子那么长，总会遇到某些人、某些事，打破了自己毕生坚持的原则。总要过几年出乎意料的日子、有几度疲劳揪心的挣扎，才算真正递交了“阅历”的答卷。一生真正深刻的，其实也不过就是那几年。经历到最后会明白，把时间浪费在难忘的时间里，一点也不后悔。 </p>
-        <p> 爱到浪漫，是刚开始。爱到痛苦，是要分手。爱到平淡，就该结婚。感情发展到不同时期，就要做不同事。没有一辈子的浪漫和甜蜜，真正能长伴你身边的，只是慢慢老去的熟悉。情浓时说的一切都不可信，情淡时的每一天才是真。 </p>
-        <p>只要我们真正相爱，哪怕只有一天，一个小时，我们就不应该再有一刀两断的日子。也许你会在将来不爱我，也许你要离开我，但是我永远对你负有责任，就是你的一切苦难就永远是我的。我觉得我爱了你了，从此以后，不管什么时候，我都不能对你无动于衷。</p>
-      </ul>
-      <div class="share"> 
-        <!-- Baidu Button BEGIN -->
-        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <span class="bds_more">分享到：</span> <a class="bds_qzone"></a> <a class="bds_tsina"></a> <a class="bds_tqq"></a> <a class="bds_renren"></a> <a class="bds_t163"></a> <a class="shareCount"></a> </div>
-        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585" ></script> 
-        <script type="text/javascript" id="bdshell_js"></script> 
-        <script type="text/javascript">
-document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
-</script> 
-        <!-- Baidu Button END --> 
-      </div>
-      <div class="otherlink">
-        <h2>相关文章</h2>
-        <ul>
-          <li><a href="/newstalk/mood/2013-07-24/518.html" title="我希望我的爱情是这样的">我希望我的爱情是这样的有种情谊，不是爱情，也算不得友情有种情谊，不是爱情，也算不得友情</a></li>
-          <li><a href="/newstalk/mood/2013-07-02/335.html" title="有种情谊，不是爱情，也算不得友情">有种情谊，不是爱情，也算不得友情有种情谊，不是爱情，也算不得友情有种情谊，不是爱情，也算不得友情</a></li>
-          <li><a href="/newstalk/mood/2013-07-01/329.html" title="世上最美好的爱情">世上最美好的爱情</a></li>
-          <li><a href="/news/read/2013-06-11/213.html" title="爱情没有永远，地老天荒也走不完">爱情没有永远，地老天荒也走不完</a></li>
-          <li><a href="/news/s/2013-06-06/24.html" title="爱情的背叛者">爱情的背叛者</a></li>
-        </ul>
-      </div>
-    </div>
+   <div class="blogs">
+    <div class="newlist">
+  <h2><span>
+<a href="/news/china/">国内新闻</a><a href="/news/world/">国际新闻</a><a href="/news/ent/">娱乐新闻</a><a href="/news/sports/">体育新闻</a></span>您当前的位置：<a href="/index.html">首页</a>&nbsp;>&nbsp;<a href="/news/">新闻中心</a></h2>
+     <ul>
+<h3>国内新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/69.html" title="广东丹霞山发现巨型"青铜剑"(组图)">广东丹霞山发现巨型"青铜剑"(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/68.html" title="驻日大使崔天凯:胡锦涛主席访日有三点值得关注">驻日大使崔天凯:胡锦涛主席访日有三点值得</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/67.html" title="杭州湾跨海大桥日均车流量逾10万(组图)">杭州湾跨海大桥日均车流量逾10万(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/66.html" title="广东省物价局：粮价节后上涨不可信">广东省物价局：粮价节后上涨不可信</a></li>
+
+<li><span>2012-12-10</span><a href="/news/china/2012-12-10/65.html" title="柏杨葬礼将于14日举行 骨灰抛撒绿岛海面">柏杨葬礼将于14日举行 骨灰抛撒绿岛海面</a></li>
+<h3>国际新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/72.html" title="中国紧急援助物资运抵缅甸仰光(组图)">中国紧急援助物资运抵缅甸仰光(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/70.html" title="俄罗斯第三任总统梅德韦杰夫宣誓就职">俄罗斯第三任总统梅德韦杰夫宣誓就职</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/15.html" title="中国紧急援助物资运抵缅甸仰光(组图)">中国紧急援助物资运抵缅甸仰光(组图)</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/14.html" title="印度成功试射一枚“烈火－3”型导弹">印度成功试射一枚“烈火－3”型导弹</a></li>
+
+<li><span>2012-12-10</span><a href="/news/world/2012-12-10/13.html" title="马来红新月会宣布将向缅甸派出救灾小组">马来红新月会宣布将向缅甸派出救灾小组</a></li>
+<h3>娱乐新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/76.html" title="“最美清洁工”原是《赤壁》宫女">“最美清洁工”原是《赤壁》宫女</a></li>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/75.html" title="尹馨大胆亮相《男人装》 嫩肤美腿勾人魂">尹馨大胆亮相《男人装》 嫩肤美腿勾人魂</a></li>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/74.html" title="传张艺谋因执导奥运身价涨5倍">传张艺谋因执导奥运身价涨5倍</a></li>
+
+<li><span>2012-12-10</span><a href="/news/ent/2012-12-10/73.html" title="张曼玉广告写真花絮曝光 流露优雅从容">张曼玉广告写真花絮曝光 流露优雅从容</a></li>
+<h3>体育新闻</h3>
+
+<li><span>2012-12-10</span><a href="/news/sports/2012-12-10/78.html" title="中国男乒第16次捧起斯韦思林杯">中国男乒第16次捧起斯韦思林杯</a></li>
+
+<li><span>2012-12-10</span><a href="/news/sports/2012-12-10/77.html" title="科比专为大场面而生">科比专为大场面而生</a></li>
+
+<li><span>2012-12-10</span><a href="/news/sports/2012-12-10/71.html" title="奥运圣火成功登顶珠峰">奥运圣火成功登顶珠峰</a></li>
+  </ul>
+</div>
     <!--bloglist end-->
     <aside>
       <div class="search">

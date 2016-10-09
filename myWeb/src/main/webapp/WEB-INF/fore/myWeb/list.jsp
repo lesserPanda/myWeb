@@ -8,37 +8,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>view-黑色时间轴个人博客模板</title>
+<title>view-lesserPanda个人博客</title>
 <meta name="keywords" content="黑色模板,个人网站模板,个人博客模板,博客模板,css3,html5,网站模板" />
 <meta name="description" content="这是一个有关黑色时间轴的css3 html5 网站模板" />
-<link href="css/styles.css" rel="stylesheet">
-<link href="css/view.css" rel="stylesheet">
-<!-- 返回顶部调用 begin -->
-<link href="css/lrtk.css" rel="stylesheet" />
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<!-- 返回顶部调用 end-->
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
+<jsp:include page="/WEB-INF/fore/commons/head.jsp"/>
 </head>
 <body>
-<header>
-  <nav id="nav">
-    <ul>
-      <li><a href="/" >网站首页</a></li>
-      <li><a href="/download/" target="_blank" title="个人博客模板">个人博客模板</a></li>
-      <li><a href="/book/" target="_blank" title="图书推荐">图书推荐</a></li>
-      <li><a href="/web/" target="_blank" title="网站建设">网站建设</a></li>
-      <li><a href="/newshtml5/" target="_blank" title="HTML5 / CSS3">HTML5 / CSS3</a></li>
-      <li><a href="/jstt/" target="_blank" title="技术探讨">技术探讨</a></li>
-      <li><a href="/news/s/" target="_blank" title="慢生活">慢生活</a></li>
-      <li><a href="/newstalk/" target="_blank" title="碎言碎语">碎言碎语</a></li>
-      <li><a href="/news/jsex/" target="_blank" title="JS 实例代码演示">JS实例</a></li>
-    </ul>
-    <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题--> 
-  </nav>
-</header>
+<jsp:include page="/WEB-INF/fore/commons/show_message.jsp"/>
 <!--header end-->
 <div id="mainbody">
   <div class="blogs">

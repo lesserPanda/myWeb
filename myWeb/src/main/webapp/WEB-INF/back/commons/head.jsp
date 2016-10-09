@@ -8,6 +8,7 @@
 <link id="skin" rel="stylesheet" href="/vendor/jBox/Skins/Default/jbox.css" />
 
 <script type="text/javascript" src="/vendor/jquery.js"></script>
+<script type="text/javascript" src="/vendor/moment.js"></script>
 <script type="text/javascript" src="/vendor/cookie/jquery.cookie.js"></script>
 <script type="text/javascript" src="/vendor/My97DatePicker/cn_WdatePicker.js"></script>
 <script type="text/javascript" src="/vendor/page/pageControl.js"></script>

@@ -7,7 +7,8 @@
 </head>
 <body>
 <%
-response.sendRedirect("/back/login.do");
+/* response.sendRedirect("/back/login.do"); */
+response.sendRedirect("/index/toIndex");
 %>
 </body>
 </html>

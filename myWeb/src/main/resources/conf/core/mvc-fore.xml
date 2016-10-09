@@ -16,8 +16,11 @@
 	<mvc:resources mapping="/attached/**"  location="/attached/" cache-period="31556926"/>
 	<mvc:resources mapping="/back/**"  location="/back/styles/blue_menu_top_standard/" cache-period="31556926"/> 
 	<mvc:resources mapping="/editor/**"  location="/editor/" cache-period="31556926"/>
-	<mvc:resources mapping="/vendor/**"  location="/vendor/" cache-period="31556926"/> 
+	<mvc:resources mapping="/vendor/**"  location="/vendor/" cache-period="31556926"/>
+	<mvc:resources mapping="/myWeb/**"  location="/myWeb/" cache-period="31556926"/>  
 	<mvc:resources mapping="/fore/**"  location="/fore/styles/1/" cache-period="31556926"/>
+	<mvc:resources mapping="/music/**"  location="/music/" cache-period="31556926"/> 
+	
 	
 	<!-- 自动扫描装配组件(只扫描@Controller) 代替了　<context:annotation-config/>　-->
 	<context:component-scan base-package="net.tuxun.component.*.web, net.tuxun.customer.module.*.web">
