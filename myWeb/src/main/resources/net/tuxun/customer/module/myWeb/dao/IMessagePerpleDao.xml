@@ -8,9 +8,11 @@
 	<resultMap id="MessagePerpleMap" type="MessagePerple">
 		<id property="id" column="ID" jdbcType="NVARCHAR"/>
 		<result property="messagePerple" column="MESSAGE_PERPLE" jdbcType="VARCHAR"/>
+		<result property="messageEmail" column="MESSAGE_EMAIL" jdbcType="VARCHAR"/>
 		<result property="messagePerpleIp" column="MESSAGE_PERPLE_IP" jdbcType="VARCHAR"/>
 		<result property="createTime" column="CREATE_TIME" jdbcType="VARCHAR"/>
 		<result property="messageContent" column="MESSAGE_CONTENT" jdbcType="VARCHAR"/>
+		<result property="messageTitle" column="MESSAGE_TITLE" jdbcType="VARCHAR"/>
 	</resultMap>
 	
 	<select id="select" resultMap="MessagePerpleMap" parameterType="string">
@@ -26,15 +28,19 @@
 		INSERT INTO MESSAGE_PERPLE  (
 			ID,
 			MESSAGE_PERPLE,
+			MESSAGE_EMAIL,
 			MESSAGE_PERPLE_IP,
 			CREATE_TIME,
-			MESSAGE_CONTENT
+			MESSAGE_CONTENT,
+			MESSAGE_TITLE
 		) VALUES (
 			#{id, jdbcType=VARCHAR},
 			#{messagePerple, jdbcType=VARCHAR},
+			#{messageEmail, jdbcType=VARCHAR},
 			#{messagePerpleIp, jdbcType=VARCHAR},
 			#{createTime, jdbcType=VARCHAR},
-			#{messageContent, jdbcType=VARCHAR}
+			#{messageContent, jdbcType=VARCHAR},
+			#{messageTitle, jdbcType=VARCHAR}
 		)
 	</insert>
 	
@@ -44,9 +50,11 @@
 		SET
 			ID = #{id, jdbcType=VARCHAR},
 			MESSAGE_PERPLE = #{messagePerple, jdbcType=VARCHAR},
+			MESSAGE_EMAIL = #{messageEmail, jdbcType=VARCHAR},
 			MESSAGE_PERPLE_IP = #{messagePerpleIp, jdbcType=VARCHAR},
 			CREATE_TIME = #{createTime, jdbcType=VARCHAR},
-			MESSAGE_CONTENT = #{messageContent, jdbcType=VARCHAR}
+			MESSAGE_CONTENT = #{messageContent, jdbcType=VARCHAR},
+			MESSAGE_TITLE = #{messageTitle, jdbcType=VARCHAR}
     	WHERE 
     		ID = #{id} 
 	</update>
@@ -61,6 +69,9 @@
 			<if test="messagePerple != null">
 				MESSAGE_PERPLE = #{messagePerple},
 			</if>
+			<if test="messageEmail != null">
+				MESSAGE_EMAIL = #{messageEmail},
+			</if>
 			<if test="messagePerpleIp != null">
 				MESSAGE_PERPLE_IP = #{messagePerpleIp},
 			</if>
@@ -68,7 +79,10 @@
 				CREATE_TIME = #{createTime},
 			</if>
 			<if test="messageContent != null">
-				MESSAGE_CONTENT = #{messageContent}
+				MESSAGE_CONTENT = #{messageContent},
+			</if>
+			<if test="messageTitle != null">
+				MESSAGE_TITLE = #{messageTitle}
 			</if>
 		</set>
     	WHERE 
@@ -89,8 +103,10 @@
 		SELECT 
 			ID AS id,
 			MESSAGE_PERPLE AS messagePerple ,
+			MESSAGE_EMAIL AS messageEmail ,
 			MESSAGE_PERPLE_IP AS messagePerpleIp ,
-			CREATE_TIME AS createTime 
+			CREATE_TIME AS createTime ,
+			MESSAGE_TITLE AS messageTitle 
 		FROM 
 			MESSAGE_PERPLE  
 		<where>

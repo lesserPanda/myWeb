@@ -4,7 +4,8 @@
 <!-- 返回顶部调用 begin -->
 <link href="/fore/css/lrtk.css" rel="stylesheet" />
 <link href="/fore/myweb/css/index.css" rel="stylesheet" />
-<script type="text/javascript" src="/fore/js/jquery.js"></script>
+<script type="text/javascript" src="/vendor/jquery.js"></script>
+<script type="text/javascript" src="/vendor/layer/layer.js"></script>
 <script type="text/javascript" src="/fore/js/js.js"></script>
 <script type="text/javascript" src="/vendor/moment.js"></script>
 <!-- 返回顶部调用 end-->

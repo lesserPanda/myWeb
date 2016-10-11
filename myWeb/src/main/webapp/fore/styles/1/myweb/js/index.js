@@ -1,6 +1,3 @@
-/**
- * 文件上传插件
- */
 $(function(){
 	$.ajax({
 		url:"/index/getGRJN",
@@ -15,7 +12,7 @@ $(function(){
 				
 				if(index == 0){
 					gr0HTML += '<figure> <img src="'+value.image+'" style="width:630px;height:250px"  alt="Panama Hat"><figcaption><strong>'+value.title+'</strong>'+value.description+'</figcaption></figure><div class="card"><h2>我的名片</h2>'+
-				      '<p>网名：lesserPanda | 小熊猫</p><p>姓名：潘登</p><p>职业：java开发</p><p>电话：13396680863</p><p>Email：pandeng123321sina.com</p><ul class="linkmore"><li><a href="/" class="talk" title="给我留言"></a></li>'+
+				      '<p>网名：lesserPanda | 小熊猫</p><p>姓名：潘登</p><p>职业：java开发</p><p>电话：13396680863</p><p>Email：pandeng123321sina.com</p><ul class="linkmore"><li><a href="javascript:void(0)" id="liveMessage" class="talk" title="给我留言"></a></li>'+
 				      '<li><a href="/" class="address" title="联系地址"></a></li><li><a href="/" class="email" title="给我写信"></a></li><li><a href="/" class="photos" title="生活照片"></a></li><li><a href="/" class="heart" title="关注我"></a></li>'+
 				      '</ul></div>';
 				}else{
@@ -28,5 +25,17 @@ $(function(){
 			$("#mainbody .info").append(gr0HTML);
 			$(".blogs .bloglist").append(gr1HTML);
 		}
-	})
+	});
+	
+	//给我留言
+	$("#mainbody").delegate("#liveMessage", "click", function() {
+		layer.open({
+			  type: 2,
+			  title: '给我留言',
+			  shadeClose: true,
+			  shade: 0.8,
+			  area: ['600px', '85%'],
+			  content: '/index/toLiveMessage' //iframe的url
+			}); 
+	});
 });

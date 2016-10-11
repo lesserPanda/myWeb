@@ -17,55 +17,88 @@ public class MessagePerple implements java.io.Serializable {
     }
     
     /** 全参构造函数 */
-    public MessagePerple(java.lang.Object id, java.lang.Object messagePerple, java.lang.Object messagePerpleIp, java.lang.Object createTime, java.lang.Object messageContent) {
+    public MessagePerple(java.lang.String id, java.lang.String messagePerple, java.lang.String messageEmail, java.lang.String messagePerpleIp, java.util.Date createTime, java.lang.String messageContent, java.lang.String messageTitle) {
       this.id = id;
       this.messagePerple = messagePerple;
+      this.messageEmail = messageEmail;
       this.messagePerpleIp = messagePerpleIp;
       this.createTime = createTime;
       this.messageContent = messageContent;
+      this.messageTitle = messageTitle;
     }
     
     // 编号 
-    private java.lang.Object id;
+    private java.lang.String id;
     // 留言人姓名 
-    private java.lang.Object messagePerple;
+    private java.lang.String messagePerple;
+    //留言人email
+    private java.lang.String messageEmail;
     // 留言人ip 
     private java.lang.Object messagePerpleIp;
     // 留言时间 
-    private java.lang.Object createTime;
+    private java.util.Date createTime;
     // 留言内容 
-    private java.lang.Object messageContent;
+    private java.lang.String messageContent;
+    //留言主题
+    private java.lang.String messageTitle;
+    
+	public java.lang.String getId() {
+		return id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.String getMessagePerple() {
+		return messagePerple;
+	}
+
+	public void setMessagePerple(java.lang.String messagePerple) {
+		this.messagePerple = messagePerple;
+	}
+
+	public java.lang.String getMessageEmail() {
+		return messageEmail;
+	}
+
+	public void setMessageEmail(java.lang.String messageEmail) {
+		this.messageEmail = messageEmail;
+	}
+
+	public java.lang.Object getMessagePerpleIp() {
+		return messagePerpleIp;
+	}
+
+	public void setMessagePerpleIp(java.lang.Object messagePerpleIp) {
+		this.messagePerpleIp = messagePerpleIp;
+	}
+
+	public java.util.Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(java.util.Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public java.lang.String getMessageContent() {
+		return messageContent;
+	}
+
+	public void setMessageContent(java.lang.String messageContent) {
+		this.messageContent = messageContent;
+	}
+
+	public java.lang.String getMessageTitle() {
+		return messageTitle;
+	}
+
+	public void setMessageTitle(java.lang.String messageTitle) {
+		this.messageTitle = messageTitle;
+	}
      
-    public  java.lang.Object getId() {
-        return this.id;
-    }
-    public void setId(java.lang.Object id) {
-        this.id = id;
-    }
-    public  java.lang.Object getMessagePerple() {
-        return this.messagePerple;
-    }
-    public void setMessagePerple(java.lang.Object messagePerple) {
-        this.messagePerple = messagePerple;
-    }
-    public  java.lang.Object getMessagePerpleIp() {
-        return this.messagePerpleIp;
-    }
-    public void setMessagePerpleIp(java.lang.Object messagePerpleIp) {
-        this.messagePerpleIp = messagePerpleIp;
-    }
-    public  java.lang.Object getCreateTime() {
-        return this.createTime;
-    }
-    public void setCreateTime(java.lang.Object createTime) {
-        this.createTime = createTime;
-    }
-    public  java.lang.Object getMessageContent() {
-        return this.messageContent;
-    }
-    public void setMessageContent(java.lang.Object messageContent) {
-        this.messageContent = messageContent;
-    }
+   
 }
 
 
