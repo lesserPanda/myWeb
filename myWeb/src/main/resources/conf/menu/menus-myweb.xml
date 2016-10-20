@@ -24,6 +24,13 @@
 					<perm sort="6" name="删除" code="MessagePerple:messagePerple:remove"/>
 				</menu>	
 
+				<menu sort="3" key="SkillInfo:skillInfo:list" name="技能表列表" url="/SkillInfo/skillInfo/list.do" >
+					<perm sort="0" name="查看" code="SkillInfo:skillInfo:view"/>
+					<perm sort="3" name="保存" code="SkillInfo:skillInfo:add"/>
+					<perm sort="4" name="更新" code="SkillInfo:skillInfo:alter"/>
+					<perm sort="6" name="删除" code="SkillInfo:skillInfo:remove"/>
+				</menu>	
+				
 			</menu>
 		</menu>
 	</menu>

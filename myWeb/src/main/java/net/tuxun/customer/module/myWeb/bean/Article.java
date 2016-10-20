@@ -18,7 +18,7 @@ public class Article implements java.io.Serializable {
     }
     
     /** 全参构造函数 */
-    public Article(java.lang.String id, java.lang.String categoryId, java.lang.String title, java.lang.String content, java.lang.String link, java.lang.String color, java.lang.String image, java.lang.String keywords, java.lang.String description, java.lang.Integer weight, java.util.Date weightDate, java.lang.Integer pushParise, java.lang.Integer hits, java.lang.String posid, java.lang.String customContentView, java.lang.String viewConfig, java.lang.String createBy, java.util.Date createDate, java.lang.String updateBy, java.util.Date updateDate, java.lang.String remarks, java.lang.String delFlag) {
+    public Article(java.lang.String id, java.lang.String categoryId, java.lang.String title, java.lang.String content, java.lang.String link, java.lang.String color, java.lang.String image, java.lang.String keywords, java.lang.String description, java.lang.Integer weight, java.util.Date weightDate, java.lang.Integer pushParise, java.lang.Integer hits, java.lang.String posid, java.lang.String customContentView, java.lang.String viewConfig, java.lang.String createBy, java.util.Date createDate, java.lang.String updateBy, java.util.Date updateDate, java.lang.String remarks, java.lang.String delFlag, java.lang.String zzFlag) {
       this.id = id;
       this.categoryId = categoryId;
       this.title = title;
@@ -41,6 +41,7 @@ public class Article implements java.io.Serializable {
       this.updateDate = updateDate;
       this.remarks = remarks;
       this.delFlag = delFlag;
+      this.zzFlag = zzFlag;
     }
     
     // 编号 
@@ -87,6 +88,14 @@ public class Article implements java.io.Serializable {
     private java.lang.String remarks;
     // 删除标记 
     private java.lang.String delFlag;
+    //伤不起点击数
+    private java.lang.Integer vulnerableNum;
+    //喜欢点击数
+    private java.lang.Integer likeNum;
+    //感兴趣点击数
+    private java.lang.Integer interestedNum;
+    //转载收藏003标记
+    private java.lang.String zzFlag;
     // 
     private java.util.List<CmsComment> cmsComments;
      
@@ -273,6 +282,39 @@ public class Article implements java.io.Serializable {
 	public void setCmsComments(List<CmsComment> cmsComments) {
 		this.cmsComments = cmsComments;
 	}
+
+	public java.lang.Integer getVulnerableNum() {
+		return vulnerableNum;
+	}
+
+	public void setVulnerableNum(java.lang.Integer vulnerableNum) {
+		this.vulnerableNum = vulnerableNum;
+	}
+
+	public java.lang.Integer getLikeNum() {
+		return likeNum;
+	}
+
+	public void setLikeNum(java.lang.Integer likeNum) {
+		this.likeNum = likeNum;
+	}
+
+	public java.lang.Integer getInterestedNum() {
+		return interestedNum;
+	}
+
+	public void setInterestedNum(java.lang.Integer interestedNum) {
+		this.interestedNum = interestedNum;
+	}
+
+	public java.lang.String getZzFlag() {
+		return zzFlag;
+	}
+
+	public void setZzFlag(java.lang.String zzFlag) {
+		this.zzFlag = zzFlag;
+	}
+	
 }
 
 

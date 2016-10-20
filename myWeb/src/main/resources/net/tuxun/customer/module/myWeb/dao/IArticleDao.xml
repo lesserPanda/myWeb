@@ -28,6 +28,10 @@
 		<result property="updateDate" column="UPDATE_DATE" jdbcType="DATE"/>
 		<result property="remarks" column="REMARKS" jdbcType="VARCHAR"/>
 		<result property="delFlag" column="DEL_FLAG" jdbcType="VARCHAR"/>
+		<result property="vulnerableNum" column="vulnerable_num" jdbcType="INTEGER"/>
+		<result property="likeNum" column="like_num" jdbcType="INTEGER"/>
+		<result property="interestedNum" column="interested_num" jdbcType="INTEGER"/>
+		<result property="zzFlag" column="zz_flag" jdbcType="VARCHAR"/>
 	</resultMap>
 	
 	<select id="select" resultMap="ArticleMap" parameterType="string">
@@ -62,7 +66,8 @@
 			UPDATE_BY,
 			UPDATE_DATE,
 			REMARKS,
-			DEL_FLAG
+			DEL_FLAG,
+			zz_flag
 		) VALUES (
 			#{id, jdbcType=VARCHAR},
 			#{categoryId, jdbcType=VARCHAR},
@@ -85,7 +90,8 @@
 			#{updateBy, jdbcType=VARCHAR},
 			#{updateDate, jdbcType=DATE},
 			#{remarks, jdbcType=VARCHAR},
-			#{delFlag, jdbcType=VARCHAR}
+			#{delFlag, jdbcType=VARCHAR},
+			#{zzFlag, jdbcType=VARCHAR}
 		)
 	</insert>
 	
@@ -114,7 +120,11 @@
 			UPDATE_BY = #{updateBy, jdbcType=VARCHAR},
 			UPDATE_DATE = #{updateDate, jdbcType=DATE},
 			REMARKS = #{remarks, jdbcType=VARCHAR},
-			DEL_FLAG = #{delFlag, jdbcType=VARCHAR}
+			DEL_FLAG = #{delFlag, jdbcType=VARCHAR},
+			vulnerable_num = #{vulnerableNum, jdbcType=INTEGER},
+			like_num = #{likeNum, jdbcType=INTEGER},
+			interested_num = #{interestedNum, jdbcType=INTEGER},
+			zz_flag = #{zzFlag, jdbcType=VARCHAR}
     	WHERE 
     		ID = #{id} 
 	</update>
@@ -187,7 +197,16 @@
 				REMARKS = #{remarks},
 			</if>
 			<if test="delFlag != null">
-				DEL_FLAG = #{delFlag}
+				DEL_FLAG = #{delFlag},
+			</if>
+			<if test="vulnerableNum != null">
+				vulnerable_num = #{vulnerableNum},
+			</if>
+			<if test="likeNum != null">
+				like_num = #{likeNum},
+			</if>
+			<if test="interestedNum != null">
+				interested_num = #{interestedNum}
 			</if>
 		</set>
     	WHERE 
@@ -227,7 +246,11 @@
 			UPDATE_BY AS updateBy,
 			UPDATE_DATE AS updateDate,
 			REMARKS AS remarks,
-			DEL_FLAG AS delFlag
+			DEL_FLAG AS delFlag,
+			vulnerable_num AS vulnerableNum,
+			like_num AS likeNum,
+			interested_num AS interestedNum,
+			zz_flag AS zzFlag
 		FROM 
 			ARTICLE  
 		<where>
@@ -283,6 +306,9 @@
 		<result property="updateDate" column="UPDATE_DATE" jdbcType="DATE"/>
 		<result property="remarks" column="REMARKS" jdbcType="VARCHAR"/>
 		<result property="delFlag" column="DEL_FLAG" jdbcType="VARCHAR"/>
+		<result property="vulnerableNum" column="vulnerable_num" jdbcType="INTEGER"/>
+		<result property="likeNum" column="like_num" jdbcType="INTEGER"/>
+		<result property="interestedNum" column="interested_num" jdbcType="INTEGER"/>
 		<collection property="cmsComments" column="id" javaType="ArrayList" 
 		ofType="CmsComment" select="net.tuxun.customer.module.Article.dao.ICmsCommentDao.listByPrimaryTableId" />
 	</resultMap>

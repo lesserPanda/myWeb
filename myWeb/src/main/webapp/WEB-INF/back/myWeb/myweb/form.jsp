@@ -47,6 +47,18 @@ $(function(){
 			attrs:["id", "title", "content", "name", "ip", "createDate", "robackName", "robackCreateDate", "auditUserId", "auditDate", "delFlag"]  
 		});
 	}
+	
+	$("#zzType").hide();
+	
+	$("#categoryId").on("click", function(){
+		$this = $(this);
+		if("003" == $this.find("option:selected").val()){
+			$("#zzType").show();
+		}else{
+			$("#zzType").hide();
+		}
+		
+	});
 });
 </script>
 </head>
@@ -90,10 +102,24 @@ $(function(){
 				<s:option value="002">技能提升</s:option>
 				<s:option value="003">转载收藏</s:option>
 				<s:option value="004">生活琐事</s:option>
+				<s:option value="006">首页介绍</s:option>
 				<s:option value="005">其他</s:option>
 				</s:select>
 		    </td>
 		    </tr>
+		    
+		    <tr id="zzType">
+		  	<th width="15%">转载类型：</th>
+		    <td width="35%" >
+		    	<s:select path="zzFlag">
+		    	<s:option value="0030">默认</s:option>
+				<s:option value="0031">伤不起</s:option>
+				<s:option value="0032">喜欢</s:option>
+				<s:option value="0033">感兴趣</s:option>
+				</s:select>
+		    </td>
+		    </tr>
+		    
 		    <tr>
 		  	<th width="15%">标题：</th>
 		    <td width="35%" >

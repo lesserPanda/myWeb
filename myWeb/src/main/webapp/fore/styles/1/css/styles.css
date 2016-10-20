@@ -21,7 +21,7 @@ header nav ul li a:hover, #nav_current { color: #fff; background: rgba(20, 20, 2
 .info { width: 1000px; margin: 40px auto; overflow: hidden; clear: both }
 /* 图片向上翻转的动画效果 */
 .info figure { display: inline-block; width: 630px; height: 250px; position: relative; -webkit-animation: pageTop 6s ease 0.5s backwards; -moz-animation: pageTop 6s ease 0.5s backwards; -ms-animation: pageTop 6s ease 0.5s backwards; -o-animation: pageTop 6s ease 0.5s backwards; animation: pageTop 6s ease 0.5s backwards; float: left; }
-.info figcaption { padding: 20px; position: absolute; top: 20%; left: 0; background: rgba(153,153,153,.8); color: white; opacity: 0; -webkit-transition: opacity .75s ease-out; -moz-transition: opacity .75s ease-out; -o-transition: opacity .75s ease-out; transition: opacity .75s ease-out; }
+.info figcaption { padding: 20px; position: absolute; top: 2%; left: 0; background: rgba(153,153,153,.8); color: white; opacity: 0; -webkit-transition: opacity .75s ease-out; -moz-transition: opacity .75s ease-out; -o-transition: opacity .75s ease-out; transition: opacity .75s ease-out; }
 .info figure:hover figcaption { opacity: 1; } /* 用opacity 设置鼠标放上去显示文字的效果 */
 .info figcaption strong { display: block; line-height: 40px }
 /* card */
@@ -79,10 +79,10 @@ aside div { box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba
 .toppic li img { width: 80px; float: left; margin-right: 10px; }
 .toppic ul li:nth-child(2) { margin: 15px 0; }
 .toppic ul li a { display: block; width: 100%; clear: both; overflow: hidden }
-.toppic li p { color: #B5783E; padding-left: 110px; margin-top: 5px; background: url(../images/icons.png) no-repeat }
-.toppic li:first-child p { background-position: 90px -263px; }
-.toppic li:nth-child(2) p { background-position: 90px -283px; }
-.toppic li:last-child p { background-position: 90px -301px; }
+.toppic li p { color: #B5783E; padding-left: 250px; margin-top: 5px; background: url(../images/icons.png) no-repeat }
+.toppic li:first-child p { background-position: 230px -263px; }
+.toppic li:nth-child(2) p { background-position: 230px -283px; }
+.toppic li:last-child p { background-position: 230px -301px; }
 /* 热门点击 */
 .clicks li { line-height: 24px; }
 .clicks li span:before { content: "【"; }

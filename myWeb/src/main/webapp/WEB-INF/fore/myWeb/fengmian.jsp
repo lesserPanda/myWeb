@@ -63,7 +63,7 @@
   </ul>
 </div>
     <!--bloglist end-->
-    <aside>
+    <%-- <aside>
       <div class="search">
         <form class="searchform" method="get" action="#">
           <input type="text" name="s" value="Search" onfocus="this.value=''" onblur="this.value='Search'">
@@ -119,69 +119,13 @@
           <li><span><a href="/">古典风格</a></span><a href="/">花气袭人是酒香—个人网站模板</a></li>
         </ol>
       </div>
-    </aside>
+    </aside> --%>
+    <iframe src="/index/toRightModel" style="width:335px;height:1250px;margin:0px 0px 0px 5px;"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
   </div>
   <!--blogs end--> 
 </div>
 <!--mainbody end-->
-<footer>
-  <div class="footer-mid">
-    <div class="links">
-      <h2>友情链接</h2>
-      <ul>
-        <li><a href="/">杨青个人博客</a></li>
-        <li><a href="http://www.3dst.com">3DST技术服务中心</a></li>
-      </ul>
-    </div>
-    <div class="visitors">
-      <h2>最新评论</h2>
-      <dl>
-        <dt><img src="images/s8.jpg">
-        <dt>
-        <dd>DanceSmile
-          <time>49分钟前</time>
-        </dd>
-        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-07-28/530.html#comments" class="title">如果要学习web前端开发，需要学习什么？ </a>中评论：</dd>
-        <dd>文章非常详细，我很喜欢.前端的工程师很少，我记得几年前yahoo花高薪招聘前端也招不到</dd>
-      </dl>
-      <dl>
-        <dt><img src="images/s7.jpg">
-        <dt>
-        <dd>yisa
-          <time>2小时前</time>
-        </dd>
-        <dd>在 <a href="http://www.yangqq.com/news/s/2013-07-31/533.html#comments" class="title">芭蕾女孩的心事儿</a>中评论：</dd>
-        <dd>我手机里面也有这样一个号码存在</dd>
-      </dl>
-      <dl>
-        <dt><img src="images/s6.jpg">
-        <dt>
-        <dd>小林博客
-          <time>8月7日</time>
-        </dd>
-        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-06-18/285.html#comments" class="title">如果个人博客网站再没有价值，你还会坚持吗？ </a>中评论：</dd>
-        <dd>博客色彩丰富，很是好看</dd>
-      </dl>
-    </div>
-    <section class="flickr">
-      <h2>摄影作品</h2>
-      <ul>
-        <li><a href="/"><img src="images/01.jpg"></a></li>
-        <li><a href="/"><img src="images/02.jpg"></a></li>
-        <li><a href="/"><img src="images/03.jpg"></a></li>
-        <li><a href="/"><img src="images/04.jpg"></a></li>
-        <li><a href="/"><img src="images/05.jpg"></a></li>
-        <li><a href="/"><img src="images/06.jpg"></a></li>
-        <li><a href="/"><img src="images/07.jpg"></a></li>
-        <li><a href="/"><img src="images/08.jpg"></a></li>
-        <li><a href="/"><img src="images/09.jpg"></a></li>
-      </ul>
-    </section>
-  </div>
-  <div class="footer-bottom">
-    <p>Copyright 2013 Design by <a href="http://www.yangqq.com">DanceSmile</a></p>
-  </div>
-</footer>
+<jsp:include page="/WEB-INF/fore/commons/foot.jsp"/>
 <!-- jQuery仿腾讯回顶部和建议 代码开始 -->
 <div id="tbox"> <a id="togbook" href="/e/tool/gbook/?bid=1"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
 <!-- 代码结束 -->
